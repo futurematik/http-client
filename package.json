@@ -1,0 +1,44 @@
+{
+  "name": "@fmtk/http-client",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "Gordon Leigh <gordon.leigh@futurematik.co.uk>",
+  "repository": "https://github.com/futurematik/http-client",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib/",
+    "compile": "rollup -c",
+    "build": "yarn clean && yarn compile && yarn lint && yarn test",
+    "lint": "eslint src/ --ext=ts,tsx",
+    "postversion": "git push --follow-tags",
+    "prepare": "yarn build",
+    "preversion": "yarn build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@fmtk/rollup-plugin-ts": "^0.3.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.31.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@fmtk/value-collection": "^0.1.2"
+  }
+}
