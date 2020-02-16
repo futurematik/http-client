@@ -1,7 +1,9 @@
 {
   "name": "@fmtk/http-client",
   "version": "0.1.0",
-  "main": "lib/index.js",
+  "main": "lib/bundle.js",
+  "types": "lib/index.d.ts",
+  "module": "lib/bundle.esm.js",
   "author": "Gordon Leigh <gordon.leigh@futurematik.co.uk>",
   "repository": "https://github.com/futurematik/http-client",
   "license": "MIT",
