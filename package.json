@@ -1,6 +1,6 @@
 {
   "name": "@fmtk/http-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/bundle.js",
   "types": "lib/index.d.ts",
   "module": "lib/bundle.esm.js",
